@@ -1,0 +1,8 @@
+{
+  "appId": "com.fastrstudios.fastr.app",
+  "appName": "fastr",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": true
+  }
+}

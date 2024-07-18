@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">fastr</string>
+    <string name="title_activity_main">fastr</string>
+    <string name="package_name">com.fastrstudios.fastr.app</string>
+    <string name="custom_url_scheme">com.fastrstudios.fastr.app</string>
+</resources>

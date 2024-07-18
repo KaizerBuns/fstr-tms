@@ -1,0 +1,61 @@
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: (
+    "primary": (
+      "base": #940000,
+    ),
+  )
+);
+
+@use "element-plus/theme-chalk/src/index.scss" as *;
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  /* Text classes */
+  .fstr-h1 {
+    @apply text-2xl text-black py-2;
+  }
+
+  .fstr-h2 {
+    @apply text-xl text-black py-2;
+  }
+
+  .fstr-container {
+    @apply py-20 md:py-0 md:my-20 md:mx-auto md:max-w-screen-2xl;
+  }
+
+  /* page content */
+  .fstr-content {
+    @apply flex flex-col py-2 align-middle inline-block min-w-full px-2 sm:px-6 lg:px-8;
+  }
+
+  /* Cards */
+  .fstr-card {
+    @apply shadow overflow-hidden border-b border-gray-200 sm:rounded-lg;
+  }
+
+  .fstr-card > .content {
+    @apply p-4;
+  }
+
+  .el-button.el-button--primary {
+    --el-button-text-color: red;
+  }
+
+  .fstr-input {
+    @apply rounded px-2;
+    border: 1px solid;
+    border-color: #dbdde0;
+    line-height: 30px;
+  }
+
+  .fstr-input:active {
+    border-color: #a8abb2 !important;
+  }
+
+  .fstr-input:hover {
+    border-color: #a8abb2 !important;
+  }
+}
